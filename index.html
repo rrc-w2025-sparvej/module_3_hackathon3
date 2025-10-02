@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number Game</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/image1.jpg" alt="Game Banner">
+        <h1>🎯 Guess the Number!</h1>
+        <p>Try to guess the number between 1 and 100</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <figure>
+            <img src="images/image2.png" alt="Guessing Icon" width="80">
+            <figcaption>Challenge your luck!</figcaption>
+        </figure>
+
+        <!-- Instructions -->
+        <section id="instructions">
+            <h2>📌 How to Play</h2>
+            <ul>
+                <li>Enter a number between <strong>1</strong> and <strong>100</strong>.</li>
+                <li>Click <b>Check</b> to see if your guess is correct.</li>
+                <li>You’ll get hints: 📉 Too low or 📈 Too high.</li>
+                <li>Try to guess with the fewest attempts possible!</li>
+            </ul>
+        </section>
+
+        <!-- Game Section -->
+        <section>
+            <p id="message">Start Guessing.....</p>
+            <input type="number" id="guess" placeholder="Enter your guess" min="1" max="100">
+      <button id="check-btn">Check</button>
+      <button id="restart-btn">Restart</button>
+      <p>Attempts: <span id="attempts">0</span></p>
+        
+      <!-- Progress Bar -->
+            <progress id="progress" value="0" max="100"></progress>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>🚀 Built with ❤️ by Team Hackathon</p>
+    </footer>
+
+    </body>
+</html>
