@@ -2,24 +2,26 @@
 
 ## Project Overview
 
-[Provide a brief summary of the project, including the theme and objectives.]
+In this Hackathon, we will be culminating all that we've learned so far to
+create a themed mini-game. We decided to go with a random number guessing game
+using HTML, CSS and JavaScript.
 
 ## Team Members:
 
--   Name 1
--   Name 2
--   Name 3
+-   Sania Parvej
+-   Parth Joshi
+-   Seth Boyer
 
 ## Member Contributions:
 
 ### Name 1:
 
--   Worked on [specific elements] of the webpage.
+-   Sania performed intial setup and wrote all of our HTML
 
 ### Name 2:
 
--   Was responsible for [specific tasks], focusing on [specific HTML elements].
+-   Parth was responsible for all of our styling decisions and CSS
 
 ### Name 3:
 
--   Handled [specific sections], covering [specific topics or features].
+-   Seth handled documentation and wrote all of our JavaScript

@@ -33,13 +33,14 @@
         </section>
 
         <!-- Game Section -->
-        <section>
+        <section id ="game">
             <p id="message">Start Guessing.....</p>
+            <p id = "hints"></p>
             <input type="number" id="guess" placeholder="Enter your guess" min="1" max="100">
       <button id="check-btn">Check</button>
       <button id="restart-btn">Restart</button>
-      <p>Attempts: <span id="attempts">0</span></p>
-        
+      <p>Attempts: <span id="attempts"></span></p>
+
       <!-- Progress Bar -->
             <progress id="progress" value="0" max="100"></progress>
         </section>
@@ -49,6 +50,6 @@
     <footer>
         <p>🚀 Built with ❤️ by Team Hackathon</p>
     </footer>
-
+    <script src="script.js"></script>
     </body>
 </html>
