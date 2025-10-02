@@ -4,14 +4,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let attempt_count = 0;
     const attemptDisplay = document.getElementById("attempts");
     const hintDisplay = document.getElementById("hints");
+    const progressBar = document.getElementById("progress");
 
     document.getElementById("check-btn").addEventListener("click", () => {
         const numInput = Number(document.getElementById("guess").value);
 
+        // Increment attempt count by 1 each click, increment progressbar by 1 each click
         attempt_count++;
         attemptDisplay.textContent = String(attempt_count);
+        progressBar.value = Math.min(progressBar.value + 1, progressBar.max);
 
 
+        // Kept console log AND textContent overwrite for debugging purposes
         if (numInput < randomNum) {
             hintDisplay.textContent = "The number is higher than your guess!📈";
             console.log("The number is higher than your guess.");
@@ -22,6 +26,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
             document.getElementById("check-btn").style.visibility = "hidden";
             hintDisplay.textContent = "WE HAVE A WINNER!"
             console.log("WE HAVE A WINNER!!!");
+        }
+        if (progressBar.value >= 100) {
+            hintDisplay.textContent = "Now how'd you manage that..."
+            document.getElementById("guess").style.visibility = "hidden";
+            document.getElementById("check-btn").style.visibility = "hidden";
+
         }
 
     });
